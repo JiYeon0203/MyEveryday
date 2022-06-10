@@ -3,30 +3,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <TextView
+
+    <EditText
+        android:id="@+id/etTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="메모하는 습관 기르기!"
-        android:textSize="30dp">
-    </TextView>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/memo_rv"
+        android:hint="제목">
+    </EditText>
+    <EditText
+        android:id="@+id/etContent"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
-        android:padding="10dp">
-    </androidx.recyclerview.widget.RecyclerView>
+        android:layout_height="wrap_content"
+        android:hint="내용">
+    </EditText>
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
         <Button
-            android:id="@+id/btn"
-            android:layout_width="match_parent"
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="초기화">
+        </Button>
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="추가하기">
         </Button>
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="조회">
+        </Button>
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="메인으로 돌아가기">
+        </Button>
     </LinearLayout>
-
+    <EditText
+        android:id="@+id/edtTitleResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </EditText>
+    <EditText
+        android:id="@+id/edtContentResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </EditText>
 
 </LinearLayout>
