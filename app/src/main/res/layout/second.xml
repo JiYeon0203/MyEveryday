@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "근처 병원 지도"
+        android:textSize="20dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="돌아가기"
+        android:textSize="20sp"
+        android:background="#ffff00">
+    </Button>
+
+    <fragment
+        android:id = "@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tool:context=".MapsActivity"
+        android:name = "com.google.android.gms.maps.SupportMapFragment"
+        map:cameraTargetLat = "37.541"
+        map:cameraTargetLng = "126.986"
+        map:cameraZoom = "10">
+    </fragment>
+
+
+
+
+
+
+</LinearLayout>
