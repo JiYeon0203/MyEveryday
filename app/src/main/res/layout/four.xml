@@ -17,8 +17,6 @@
         android:hint="내용">
     </EditText>
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -47,17 +45,19 @@
             android:text="메인으로 돌아가기">
         </Button>
     </LinearLayout>
-    <EditText
-        android:id="@+id/edtTitleResult"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-    </EditText>
-    <EditText
-        android:id="@+id/edtContentResult"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-    </EditText>
+
+        <EditText
+            android:id="@+id/edtTitleResult"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+        </EditText>
+        <EditText
+            android:id="@+id/edtContentResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </EditText>
+
+
 
 </LinearLayout>

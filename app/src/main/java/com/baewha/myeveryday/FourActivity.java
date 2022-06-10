@@ -26,20 +26,20 @@ public class FourActivity extends AppCompatActivity {
         setContentView(R.layout.four);
         setTitle("메모장");
 
-        ettitle = findViewById(R.id.etTitle);
-        etcontent = findViewById(R.id.etContent);
-        etcontentresult = findViewById(R.id.edtContentResult);
-        ettitleresult = findViewById(R.id.edtTitleResult);
-        btndelete = findViewById(R.id.btnDelete);
-        btnplus = findViewById(R.id.btnPlus);
-        btn = findViewById(R.id.btn);
-        btnback = findViewById(R.id.btnBack);
+        ettitle = (EditText) findViewById(R.id.etTitle);
+        etcontent = (EditText) findViewById(R.id.etContent);
+        etcontentresult = (EditText) findViewById(R.id.edtContentResult);
+        ettitleresult = (EditText) findViewById(R.id.edtTitleResult);
+        btndelete = (Button) findViewById(R.id.btnDelete);
+        btnplus = (Button) findViewById(R.id.btnPlus);
+        btn = (Button) findViewById(R.id.btn);
+        btnback = (Button) findViewById(R.id.btnBack);
 
         myHelper = new myDBHelper(this);
 
         btndelete.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 sqlDB = myHelper.getWritableDatabase();
                 myHelper.onUpgrade(sqlDB, 1, 2);
                 sqlDB.close();
@@ -48,10 +48,11 @@ public class FourActivity extends AppCompatActivity {
 
         btnplus.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 sqlDB = myHelper.getWritableDatabase();
-                sqlDB.execSQL("INSERT INTO groupTBL VALUES ( '" + ettitle.getText().toString() + "'," +
-                        etcontent.getText().toString() + ");");
+                sqlDB.execSQL("INSERT INTO groupTBL VALUE ( '"
+                        + ettitle.getText().toString() +"',"
+                        + etcontent.getText().toString() +");");
                 sqlDB.close();
                 Toast.makeText(getApplicationContext(), "입력되었습니다.", Toast.LENGTH_SHORT).show();
             }
@@ -59,13 +60,13 @@ public class FourActivity extends AppCompatActivity {
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 sqlDB = myHelper.getWritableDatabase();
                 Cursor cursor;
                 cursor = sqlDB.rawQuery("SELECT * FROM groupTBL;", null);
 
-                String strtitle = "제목" + "\r\n" + "__________________" + "\r\n";
-                String strcontent = "내용" + "\r\n" + "__________________" + "\r\n";
+                String strtitle = "제목" + "\r\n";
+                String strcontent = "내용" + "\r\n";
 
                 while (cursor.moveToNext()) {
                     strtitle += cursor.getString(0) + "\r\n";
