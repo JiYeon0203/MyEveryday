@@ -1,6 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/Sw1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="먹는거"
+            android:textSize="20dp">
+        </Switch>
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="영양제 챙겨먹기">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아침 먹기">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/cb3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="점심 먹기">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/cb4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="저녁 먹기">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/cb5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="물 6잔 이상 마시기">
+            </CheckBox>
+        </LinearLayout>
+
+
+
+
+        <Switch
+            android:id="@+id/Sw2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="운동"
+            android:textSize="20dp">
+        </Switch>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/cb6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30분정도 걷기 or 6000보 걷기">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/cb7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="버스 말고 걸어다니기">
+            </CheckBox>
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/Sw3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="잘 준비"
+            android:textSize="20dp">
+        </Switch>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/cb8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="샤워하기">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/cb9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="양치하기">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/cb10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="세수하기">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/cb11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="로션 바르기">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/cb12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="다음날 입을 옷 챙기기">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/cb13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="보조배터리와 워치 충전">
+            </CheckBox>
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/Sw4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="아침에 할 일"
+            android:textSize="20dp">
+        </Switch>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/cb14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="스트레칭">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/cb15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="가방 챙기기">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/cb16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="자고 일어난 자리 정리">
+            </CheckBox>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="네 다 지켰습니다.">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="아니요. 다 지키지 못했습니다.">
+        </RadioButton>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="뒤로가기"
+            android:layout_weight="1">
+        </Button>
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:layout_weight="1">
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>
