@@ -50,7 +50,7 @@ public class FourActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 sqlDB = myHelper.getWritableDatabase();
-                sqlDB.execSQL("INSERT INTO groupTBL VALUE ( '"
+                sqlDB.execSQL("INSERT INTO groupTBL VALUES ( '"
                         + ettitle.getText().toString() +"',"
                         + etcontent.getText().toString() +");");
                 sqlDB.close();
@@ -97,7 +97,7 @@ public class FourActivity extends AppCompatActivity {
         }
         @Override
         public void onCreate(SQLiteDatabase db) {
-            db.execSQL("CREATE TABLE groupTBL ( title char(20), content char(200));");
+            db.execSQL("CREATE TABLE groupTBL ( title CHAR(20), content CHAR(200));");
         }
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
