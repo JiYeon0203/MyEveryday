@@ -32,11 +32,11 @@ public class FiveActivity extends AppCompatActivity {
         sw1 = findViewById(R.id.Sw1);
         sw2 = findViewById(R.id.Sw2);
         sw3 = findViewById(R.id.Sw3);
-        sw4 = findViewById(R.id.Sw3);
+        sw4 = findViewById(R.id.Sw4);
         ll1 = findViewById(R.id.ll1);
         ll2 = findViewById(R.id.ll2);
         ll3 = findViewById(R.id.ll3);
-        ll4 = findViewById(R.id.ll3);
+        ll4 = findViewById(R.id.ll4);
         rg = findViewById(R.id.rg);
         rb1 = findViewById(R.id.rb1);
         rb2 = findViewById(R.id.rb2);
@@ -110,6 +110,7 @@ public class FiveActivity extends AppCompatActivity {
                 }
             }
         });
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
