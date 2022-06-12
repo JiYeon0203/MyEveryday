@@ -10,29 +10,32 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="150dp"
+        android:padding="20dp">
         <Button
             android:id="@+id/btn1"
             android:text="계산기"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
         </Button>
         <Button
             android:id="@+id/btn2"
-            android:text="병원 위치"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:text="병원\n위치"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
         </Button>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="150dp"
+        android:padding="20dp">
         <Button
             android:id="@+id/btn3"
-            android:text="병원 리스트"
+            android:text="병원\n리스트"
+            android:textSize="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">
@@ -40,6 +43,7 @@
         <Button
             android:id="@+id/btn4"
             android:text="메모장"
+            android:textSize="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">
@@ -48,10 +52,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="150dp"
+        android:padding="20dp">
         <Button
             android:id="@+id/btn5"
             android:text="하루 목표"
+            android:textSize="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">

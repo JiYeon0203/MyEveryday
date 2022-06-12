@@ -70,7 +70,7 @@ public class FourActivity extends AppCompatActivity {
 
                 while (cursor.moveToNext()) {
                     strtitle += cursor.getString(0) + "\r\n";
-                    strcontent += cursor.getString(0) + "\r\n";
+                    strcontent += cursor.getString(1) + "\r\n";
                 }
 
                 ettitleresult.setText(strtitle);
