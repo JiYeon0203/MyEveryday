@@ -10,7 +10,7 @@ public class FiveActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.five);
-        setTitle("나의 하루");
+        setTitle("하루 목표");
 
     }
 }
