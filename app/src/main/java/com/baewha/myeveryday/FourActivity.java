@@ -97,7 +97,7 @@ public class FourActivity extends AppCompatActivity {
         }
         @Override
         public void onCreate(SQLiteDatabase db) {
-            db.execSQL("CREATE TABLE groupTBL ( title CHAR(20), content CHAR(200));");
+            db.execSQL("CREATE TABLE groupTBL ( title CHAR(20) PRIMARY KEY, content CHAR(200));");
         }
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){

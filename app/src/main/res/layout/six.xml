@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ffffff">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="오늘 하루는 어때?"
+        android:text="오늘 하루는 어때?\n아이콘을 클릭해봐!"
         android:textSize="30dp"
         android:layout_marginTop="100dp"
         android:layout_alignParentTop="true"
@@ -15,44 +16,54 @@
 
     <ImageButton
         android:id="@+id/btn_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/myicon"
+        android:background="#ffffff"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/blue"
         android:layout_below="@+id/btn_2"
         android:layout_toLeftOf="@+id/btn_2">
     </ImageButton>
 
     <ImageButton
         android:id="@+id/btn_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="그냥 그래"
+        android:background="#ffffff"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/purple"
         android:layout_below="@+id/btn_3"
         android:layout_toLeftOf="@+id/btn_3">
     </ImageButton>
 
     <ImageButton
         android:id="@+id/btn_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="보통"
+        android:background="#ffffff"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/yellow"
         android:layout_centerInParent="true">
     </ImageButton>
 
     <ImageButton
         android:id="@+id/btn_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="나쁘지 않아"
+        android:background="#ffffff"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/green"
         android:layout_below="@+id/btn_3"
         android:layout_toRightOf="@+id/btn_3">
     </ImageButton>
 
     <ImageButton
         android:id="@+id/btn_5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="좋아"
+        android:background="#ffffff"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pink"
         android:layout_below="@+id/btn_4"
         android:layout_toRightOf="@+id/btn_4">
     </ImageButton>
