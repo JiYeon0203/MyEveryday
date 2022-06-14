@@ -3,6 +3,9 @@ package com.baewha.myeveryday;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -12,6 +15,7 @@ import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.Switch;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class FiveActivity extends AppCompatActivity {
@@ -22,6 +26,25 @@ public class FiveActivity extends AppCompatActivity {
     CheckBox cb1, cb2, cb3, cb4, cb5, cb6, cb7, cb8, cb9, cb10, cb11, cb12, cb13, cb14, cb15, cb16;
     Button btn, btn_back;
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu2) {
+        super.onCreateOptionsMenu(menu2);
+        MenuInflater mi = getMenuInflater();
+        mi.inflate(R.menu.menu2, menu2);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        super.onOptionsItemSelected(item);
+        switch (item.getItemId()){
+            case R.id.item2:
+                Intent intent = new Intent(getApplicationContext(), SixActivity.class);
+                startActivity(intent);
+                return true;
+        }
+        return false;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
