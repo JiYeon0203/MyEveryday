@@ -52,6 +52,8 @@ public class FiveActivity extends AppCompatActivity {
         setContentView(R.layout.five);
         setTitle("하루 목표");
 
+
+
         sw1 = findViewById(R.id.Sw1);
         sw2 = findViewById(R.id.Sw2);
         sw3 = findViewById(R.id.Sw3);

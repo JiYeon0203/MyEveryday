@@ -21,6 +21,7 @@ public class FirstActivity extends AppCompatActivity {
         setContentView(R.layout.first);
         setTitle("계산기");
 
+
         tv = findViewById(R.id.tv);
 
     }

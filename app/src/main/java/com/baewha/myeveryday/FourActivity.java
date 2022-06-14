@@ -26,6 +26,8 @@ public class FourActivity extends AppCompatActivity {
         setContentView(R.layout.four);
         setTitle("메모장");
 
+
+
         ettitle = (EditText) findViewById(R.id.etTitle);
         etcontent = (EditText) findViewById(R.id.etContent);
         etcontentresult = (EditText) findViewById(R.id.edtContentResult);
