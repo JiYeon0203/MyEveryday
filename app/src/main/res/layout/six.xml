@@ -13,49 +13,49 @@
         android:layout_centerHorizontal="true">
     </TextView>
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="안좋아"
+        android:src="@drawable/myicon"
         android:layout_below="@+id/btn_2"
         android:layout_toLeftOf="@+id/btn_2">
-    </Button>
+    </ImageButton>
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="그냥 그래"
-        android:layout_below="@+id/btn3"
-        android:layout_toLeftOf="@+id/btn3">
-    </Button>
+        android:layout_below="@+id/btn_3"
+        android:layout_toLeftOf="@+id/btn_3">
+    </ImageButton>
 
-    <Button
-        android:id="@+id/btn3"
+    <ImageButton
+        android:id="@+id/btn_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="보통"
         android:layout_centerInParent="true">
-    </Button>
+    </ImageButton>
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="나쁘지 않아"
-        android:layout_below="@+id/btn3"
-        android:layout_toRightOf="@+id/btn3">
-    </Button>
+        android:layout_below="@+id/btn_3"
+        android:layout_toRightOf="@+id/btn_3">
+    </ImageButton>
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="좋아"
         android:layout_below="@+id/btn_4"
         android:layout_toRightOf="@+id/btn_4">
-    </Button>
+    </ImageButton>
 
 
 
