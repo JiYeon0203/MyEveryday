@@ -41,7 +41,7 @@ public class SixActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.six);
-        setTitle("오늘 하루");
+        setTitle("오늘의 기분");
 
         btn1 = findViewById(R.id.btn_1);
         btn2 = findViewById(R.id.btn_2);
