@@ -6,13 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text = "근처 병원 지도"
-        android:textSize="20dp">
-    </TextView>
-
     <Button
         android:id="@+id/btn"
         android:layout_width="match_parent"

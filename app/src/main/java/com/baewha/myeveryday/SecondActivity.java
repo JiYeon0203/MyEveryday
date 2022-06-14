@@ -76,10 +76,61 @@ public class SecondActivity extends AppCompatActivity implements OnMapReadyCallb
         markerOpions4.title("동작경희병원");
         markerOpions4.snippet("병원, 의원");
 
+        LatLng haspital5 = new LatLng(37.5049, 126.9507);
+        MarkerOptions markerOpions5 = new MarkerOptions();
+        markerOpions5.position(haspital5);
+        markerOpions5.title("이화사랑피부과의원");
+        markerOpions5.snippet("피부과");
+
+        LatLng haspital6 = new LatLng(37.5042, 126.9384);
+        MarkerOptions markerOpions6 = new MarkerOptions();
+        markerOpions6.position(haspital6);
+        markerOpions6.title("프라임의원");
+        markerOpions6.snippet("피부과");
+
+        LatLng haspital7 = new LatLng(37.5049, 126.9495);
+        MarkerOptions markerOpions7 = new MarkerOptions();
+        markerOpions7.position(haspital7);
+        markerOpions7.title("정동병원");
+        markerOpions7.snippet("정형외과");
+
+        LatLng haspital8 = new LatLng(37.5009, 126.95);
+        MarkerOptions markerOpions8 = new MarkerOptions();
+        markerOpions8.position(haspital8);
+        markerOpions8.title("상도밝은안과의원");
+        markerOpions8.snippet("안과");
+
+        LatLng haspital9 = new LatLng(37.4932, 126.9245);
+        MarkerOptions markerOpions9 = new MarkerOptions();
+        markerOpions9.position(haspital9);
+        markerOpions9.title("서울특별시보라매병원");
+        markerOpions9.snippet("종합병원");
+
+        LatLng haspital10 = new LatLng(37.4995, 126.9293);
+        MarkerOptions markerOpions10 = new MarkerOptions();
+        markerOpions10.position(haspital10);
+        markerOpions10.title("서울민플러스치과의원");
+        markerOpions10.snippet("치과");
+
+        LatLng haspital11 = new LatLng(37.4999, 126.9296);
+        MarkerOptions markerOpions11 = new MarkerOptions();
+        markerOpions11.position(haspital11);
+        markerOpions11.title("삼성열린내과의원");
+        markerOpions11.snippet("내과");
+
+
         mMap.addMarker(markerOpions1);
         mMap.addMarker(markerOpions2);
         mMap.addMarker(markerOpions3);
         mMap.addMarker(markerOpions4);
+        mMap.addMarker(markerOpions5);
+        mMap.addMarker(markerOpions6);
+        mMap.addMarker(markerOpions7);
+        mMap.addMarker(markerOpions8);
+        mMap.addMarker(markerOpions9);
+        mMap.addMarker(markerOpions10);
+        mMap.addMarker(markerOpions11);
+
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(haspital1, 15));
     }
 }

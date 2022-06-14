@@ -62,6 +62,9 @@ public class ThirdActivity extends AppCompatActivity {
         adapter.addItem(new singeritem("프라임의원", "02-826-2080", "피부과"));
         adapter.addItem(new singeritem("정동병원", "02-810-7900", "정형외과"));
         adapter.addItem(new singeritem("상도밝은안과의원", "02-812-2375", "안과"));
+        adapter.addItem(new singeritem("서울특별시보라매병원", "1577-0075", "종합병원"));
+        adapter.addItem(new singeritem("서울민플러스치과의원", "02-822-7522", "치과"));
+        adapter.addItem(new singeritem("삼성열린내과의원", "02-825-8119", "내과"));
 
         listView.setAdapter(adapter);
 
@@ -100,6 +103,18 @@ public class ThirdActivity extends AppCompatActivity {
                     case 7:
                         Intent h = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:02-812-2375"));
                         startActivity(h);
+                        break;
+                    case 8:
+                        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:1577-0075"));
+                        startActivity(i);
+                        break;
+                    case 9:
+                        Intent j = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:02-822-7522"));
+                        startActivity(j);
+                        break;
+                    case 10:
+                        Intent k = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:02-825-8119"));
+                        startActivity(k);
                         break;
 
                     default:
