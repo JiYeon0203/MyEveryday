@@ -37,7 +37,8 @@ public class FourActivity extends AppCompatActivity {
         btn = (Button) findViewById(R.id.btn);
         btnback = (Button) findViewById(R.id.btnBack);
 
-        myHelper = new myDBHelper(this);
+        myHelper = new myDBHelper(this, "groupDB", null, 1);
+
 
         btndelete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,8 +54,8 @@ public class FourActivity extends AppCompatActivity {
             public void onClick(View v) {
                 sqlDB = myHelper.getWritableDatabase();
                 sqlDB.execSQL("INSERT INTO groupTBL VALUES ( '"
-                        + ettitle.getText().toString() +"',"
-                        + etcontent.getText().toString() +");");
+                        + ettitle.getText().toString()
+                        + "', '" + etcontent.getText().toString()+"');");
                 sqlDB.close();
                 Toast.makeText(getApplicationContext(), "입력되었습니다.", Toast.LENGTH_SHORT).show();
             }
@@ -94,12 +95,13 @@ public class FourActivity extends AppCompatActivity {
 
     }
     public class myDBHelper extends SQLiteOpenHelper{
-        public myDBHelper(Context context){
-            super(context, "groupDB", null, 1);
+        public myDBHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version){
+
+            super(context, name, factory, version);
         }
         @Override
         public void onCreate(SQLiteDatabase db) {
-            db.execSQL("CREATE TABLE groupTBL ( title CHAR(20) PRIMARY KEY, content CHAR(200));");
+            db.execSQL("CREATE TABLE groupTBL ( title char(20) PRIMARY KEY, content varchar(200));");
         }
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
